@@ -41,7 +41,7 @@ const plans = [
 
 export const Pricing = () => {
   return (
-    <section className="py-24 px-6 relative">
+    <section id="pricing" className="py-24 px-6 relative">
       <div className="container mx-auto relative z-10">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent">
@@ -90,10 +90,11 @@ export const Pricing = () => {
 
               <CardFooter className="pt-8">
                 <Button 
+                  onClick={() => window.location.href = '/auth'}
                   className={`w-full ${
                     plan.popular 
                       ? 'bg-gradient-primary hover:shadow-glow' 
-                      : 'bg-card hover:bg-muted border border-primary/50'
+                      : 'bg-gradient-primary hover:shadow-glow'
                   } transition-all duration-300`}
                   size="lg"
                 >

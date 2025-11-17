@@ -37,6 +37,7 @@ export const Hero = () => {
           <Button 
             size="lg" 
             className="bg-gradient-primary hover:shadow-glow transition-all duration-300 text-lg px-8 py-6"
+            onClick={() => window.location.href = '/auth'}
           >
             Start Creating Free
           </Button>
@@ -44,6 +45,7 @@ export const Hero = () => {
             size="lg" 
             variant="outline" 
             className="border-primary/50 hover:bg-primary/10 text-lg px-8 py-6"
+            onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
           >
             View Pricing
           </Button>
