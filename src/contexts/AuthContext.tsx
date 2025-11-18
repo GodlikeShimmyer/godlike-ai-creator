@@ -39,7 +39,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     
     // Store credentials (in production, this would be handled by backend)
     const users = JSON.parse(localStorage.getItem('users') || '[]');
-    users.push({ email, password, ...newUser });
+    users.push({ password, ...newUser });
     localStorage.setItem('users', JSON.stringify(users));
     
     localStorage.setItem('user', JSON.stringify(newUser));
